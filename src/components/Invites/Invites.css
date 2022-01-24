@@ -1,0 +1,97 @@
+.invites-category {
+    border: none;
+    width: 500px;
+    cursor: pointer;
+}
+
+.pokerboard-invites form label {
+    width: fit-content;
+    height: fit-content;
+}
+
+.invites-category {
+    font-size: 22px;
+}
+
+.invites-subcategory {
+    border-radius: 10px;
+    background-color: #ffebce;
+    color: rgb(0, 0, 0);
+    font-size: 22px;
+    text-shadow: 0 0 5px rgb(255, 255, 255), 0 0 10px rgb(255, 255, 255);
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    left: 100px;
+    top: 200px;
+}
+
+.invites-subcategory > label {
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.invites-subcategory > label > input {
+    cursor: pointer;
+}
+
+.poker-invites {
+    background-color: rgb(199, 255, 250);
+    border-radius: 10px;
+    border: solid 15px #ffebce;
+    box-shadow: 0 0 15px 1px black;
+    color: black;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.poker-invite-name {
+    font-weight: 600;
+    color: white;
+    text-shadow: 0 0 9px #000000, 0 0 3px #000000;
+}
+
+.poker-invite-status {
+    position: absolute;
+    left: 370px;
+}
+
+.poker-invite-user {
+    margin-top: 10px;
+}
+.poker-invite-user :nth-child(1) {
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.poker-invite-user :nth-child(2) {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.poker-invite-bottom {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.poker-invite-role {
+    font-size: 22px;
+    margin-top: 20px;
+}
+
+.poker-invites .button {
+    width: fit-content;
+    height: fit-content;
+    padding: 2px;
+}
+
+.poker-invite-action-buttons > div {
+    display: flex;
+    width: 220px;
+    justify-content: space-between;
+}

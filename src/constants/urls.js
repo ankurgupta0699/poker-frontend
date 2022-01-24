@@ -1,0 +1,70 @@
+const BASE_URL = 'http://127.0.0.1:8000';
+
+const urls = {
+    CREATE_NEW_GROUP: "/create-new-group",
+    signin: '/signin',
+    signup: '/signup',
+    home: '/home',
+    root: '/',
+    VERIFYEMAIL: '/verify',
+    RESET_PASSWORD: "/reset-password",
+    EDIT_PROFILE: "/edit-profile",
+    OWNED_GROUPS: '/owned-groups',
+    AFTER_VERIFICATION: '/after-verification',
+    EDIT_PROFILE: '/edit-profile',
+    RESET_PASSWORD: '/reset-password',
+    MY_PROFILE: '/my-profile',
+    SENT_GROUP_INVITES: '/sent-group-invites',
+    RECEIVED_GROUP_INVITES: '/received-group-invites',
+    ALL_GROUP_INVITES: '/all-group-invites',
+    CREATE_GAME: '/create-game',
+    OWNED_POKERBOARD: '/owned-pokerboards',
+    POKERBOARDS: '/pokerboards',
+    DASHBOARD: '/pokeboard/:id',
+    POKERBOARD_MEMBERS: '/pokeboard/:id/members',
+    POKER_INVITES: '/poker-invites',
+    DASHBOARD_PATH: (id) => `/pokeboard/${id}`,
+    FETCH_JIRA_TOKEN: '/fetch-jira-token/',
+    FETCH_JIRA_TICKETS_PATH: (id) => `/pokerboard/${id}/fetch-jira-tickets`,
+    FETCH_JIRA_TICKETS: '/pokerboard/:id/fetch-jira-tickets',
+    MANAGE_TICKETS_PATH: (id) => `/pokerboard/${id}/manage-tickets`,
+    MANAGE_TICKETS: '/pokerboard/:id/manage-tickets',
+};
+
+const BACKEND_URLS = {
+    ACCOUNTS: '/accounts/',
+    LOGIN: '/accounts/login/',
+    SIGNUP: '/accounts/users/',
+    USER_CRUD: '/accounts/users/',
+    LOGOUT: '/accounts/logout/',
+    SENDTOKEN: '/accounts/send-token/',
+    VERIFYTOKEN: '/accounts/verify-token/',
+    SEARCH_USER: '/accounts/userFilters/',
+    GROUP_CRUD: '/accounts/groups/',
+    SEND_INVITATION: 'send-invitation/',
+    UPDATE_PASSWORD: '/accounts/updatePassword/',
+    USER_GROUPS: '/accounts/userGroups/',
+    SENT_GROUP_INVITES: '/accounts/group-invites/',
+    RECEIVED_GROUP_INVITES: '/accounts/user-group-invites',
+    POKER_CRUD: '/poker/pokerboard/',
+    POKER_USERS: '/poker/user-pokerboard/',
+    POKER_INVITES: '/poker/poker-invites/',
+    POKER_INVITE_ID_URL: (id) => `${BASE_URL}/poker/poker-invites/${id}/`,
+    POKERBOARD_ID: (id) => `${BASE_URL}/poker/pokerboard/${id}/`,
+    USER_POKERBOARD_ID: (id) => `${BASE_URL}/poker/user-pokerboard/${id}/`,
+    USER_JIRA_TOKEN: `${BASE_URL}/poker/user-jira-token/`,
+    USER_JIRA_TOKEN_ID_URL: (id) => `${BASE_URL}/poker/user-jira-token/${id}/`,
+    JIRA_TICKET: `${BASE_URL}/poker/jira-ticket/`,
+    JIRA_TICKETS_BY_POKERBOARD_ID: (id) => `${BASE_URL}/poker/jira-ticket/?pokerboard=${id}`,
+    JIRA_TICKETS_BY_JIRA_TICKET_ID: (pokerboardId, ticketId) => `${BASE_URL}/poker/jira-ticket/0/?pokerboard=${pokerboardId}&ticket=${ticketId}`,
+};
+
+const JIRA_DOMAIN_BASE_URL = (domain) => `https://${domain}.atlassian.net/rest/api/latest/`;
+const JIRA_URLS = {
+    CURRENT_USER: 'myself/',
+    FETCH_ISSUE_BY_ID: (domain, input) => `${JIRA_DOMAIN_BASE_URL(domain)}search?jql=issue in (${input})`,
+    FETCH_ISSUE_BY_SPRINT: (domain, input) => `${JIRA_DOMAIN_BASE_URL(domain)}search?jql=sprint in (${input})`,
+    FETCH_ISSUE_BY_JQL: (domain, input) => `${JIRA_DOMAIN_BASE_URL(domain)}search?jql=${input}`,
+}
+
+export { urls, BACKEND_URLS, BASE_URL, JIRA_DOMAIN_BASE_URL, JIRA_URLS };

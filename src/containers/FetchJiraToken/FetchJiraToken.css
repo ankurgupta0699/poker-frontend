@@ -1,0 +1,36 @@
+.fetch-jira-token {
+    position: relative;
+}
+
+.fetch-jira-token form label{
+    width: unset;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.fetch-jira-token form label > *{
+    margin: 10px 20px;
+}
+
+.fetch-jira-token .input {
+    width: 400px;
+}
+
+.fetch-jira-token .font-awesome-button {
+    margin-top: 40px;
+    color: rgb(37, 94, 66);
+}
+
+.fetch-jira-token .info {
+    color: rgb(37, 94, 66);
+    font-weight: lighter;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.fetch-jira-token .next-button {
+    position: absolute;
+    right: 200px;
+    color: black;
+}
