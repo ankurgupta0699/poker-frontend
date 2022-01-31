@@ -1,0 +1,16 @@
+.invite-users {
+    display: flex;
+    justify-content: space-between;
+    height: 30px;
+}
+
+.invite-users .input {
+    width: 70%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.invite-users .button {
+    width: 25%;
+    height: 100%;
+}

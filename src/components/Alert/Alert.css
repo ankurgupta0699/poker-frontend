@@ -1,0 +1,14 @@
+
+.success-alert {
+    color: green;
+    font-weight: lighter;
+    font-size: 20px;
+    text-align: center;
+}
+
+.error-alert {
+    color: red;
+    font-weight: lighter;
+    font-size: 24px;
+    text-align: center;
+}

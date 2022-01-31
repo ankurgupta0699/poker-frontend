@@ -1,0 +1,11 @@
+.backend-ticket-items > div {
+    margin: 10px;
+}
+
+.manage-tickets .button {
+    margin: 20px 0;
+}
+
+.ticket-order {
+    margin-left: 10px;
+}

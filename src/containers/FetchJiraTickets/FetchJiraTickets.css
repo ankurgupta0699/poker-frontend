@@ -1,0 +1,63 @@
+.fetch-jira-tickets > header{
+    margin: 20px 0;
+    font-size: 40px;
+    font-weight: lighter;
+}
+
+.fetch-jira-tickets .button {
+    margin-top: 30px;
+}
+
+.jira-ticket-items {
+    margin: 40px 0;
+}
+
+/* ==============JIRA TICKET ITEM CSS================ */
+.jira-ticket {
+    background-color: rgb(199, 255, 250);
+    border-radius: 10px;
+    border: solid 15px #ffebce;
+    box-shadow: 0 0 15px 1px black;
+    color: black;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.jira-ticket .top-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.jira-ticket .bottom-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.ticket-id {
+    font-weight: 600;
+    font-size: 30px;
+    color: white;
+    text-shadow: 0 0 9px #000000, 0 0 3px #000000;
+}
+
+.ticket-summary {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.ticket-description {
+    margin-top: 15px;
+    letter-spacing: 1px;
+}
+
+.ticket-description .header, .ticket-status .header {
+    font-weight: lighter;
+    text-transform: none;
+}
+
+.ticket-status {
+    text-transform: uppercase;
+}

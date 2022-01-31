@@ -1,0 +1,40 @@
+.my-profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-details,
+.associated-groups {
+    width: 300px;
+    margin: 20px;
+}
+
+.user-details > div {
+    margin: 20px 0;
+}
+
+.my-profile .button {
+    width: 150px;
+    margin: 10px 0;
+}
+
+.my-profile .input {
+    width: 300px;
+}
+
+.edit-profile {
+    text-align: center;
+}
+
+.edit-profile .button {
+    margin: 40px;
+    padding: 20px;
+}
+
+.reset-password .button{
+    width: fit-content;
+    padding: 20px;
+    margin: 50px;
+}

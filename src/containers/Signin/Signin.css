@@ -1,0 +1,46 @@
+.signin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.signin header {
+    margin-top: 20px;
+    font-size: 35px;
+}
+
+form {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    margin-top: 20px;
+    display: flex;
+    width: 400px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.signin .signin-button {
+    margin-top: 60px;
+}
+
+.signin-after-form-link {
+    margin-top: 40px;
+    font-size: 19px;
+    color:rgb(70, 69, 69)
+}
+
+.signin-after-form-link:hover {
+    font-weight: 500;
+    color: rgb(0,0,0);
+    cursor: pointer;
+}
+
+.verify-signup .button{
+    margin: 40px;
+    width: fit-content;
+    padding: 20px;
+}

@@ -1,0 +1,58 @@
+.owned-groups {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.owned-groups h2 {
+    font-weight: 500;
+}
+
+.owned-group-item {
+    padding: 10px;
+    margin: 20px;
+    background-color: blanchedalmond;
+    border-radius: 10px;
+    width: 500px;
+}
+
+.owned-group-item > * {
+    padding: 5px;
+}
+
+.owned-group-title {
+    font-size: 30px;
+    color:rgb(0, 39, 56);
+    display: flex;
+    gap: 200px;
+}
+
+.owned-group-desc {
+    color:rgb(0, 183, 255);
+}
+
+.owned-group-members {
+    width: 100%;
+}
+
+.owned-group-members .button {
+    width: inherit;
+    height: 30px;
+    border-radius: 20px;
+    background-color: rgb(80, 21, 21);
+    font-size: 15px;
+}
+
+.owned-group-members .button:hover {
+    background-color: rgba(80, 21, 21, 0.877);
+}
+
+.group-list {
+    list-style: none;
+    padding: 10px;
+    color: #000000;;
+  }
+
+.owned-groups .button{
+    margin-top: 20px;
+}
